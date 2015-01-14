@@ -1,0 +1,104 @@
+@import './external/lesshat.less';
+
+.join-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../image/join-background-preview.jpg);
+    background-size: cover;
+}
+
+#join {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../image/join-background.jpg);
+    background-size: cover;
+    .box-shadow(inset 5px -25px 180px -20px #000);
+    
+    h1 {
+        padding-top: 100px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 35px;
+        color: #FFF;
+        font-weight: bold; 
+        text-shadow: 1px 2px 0px #888;
+    }
+    
+    .join-inner {
+        margin-top: 30px;
+        .transform(translate(0, 20px));
+        opacity: 0;
+        .transition(all ease-in-out .4s);
+        
+        .loaded & {
+            .transform(translate(0, 0));
+            opacity: 1;
+        }
+    }
+    .row {
+        background-color: #FFF;
+        padding: 0 10px;
+        margin: 10px 0;
+        opacity: 0.9;
+        .box-shadow(0px 3px 11px -5px #000);
+        
+        &:hover {
+            opacity: 1;   
+        }
+    }
+    
+    label, .textbox {
+        display: block;
+        padding: 8px 0;
+        font-size: 13px;
+        float: left;
+    }
+    
+    label {
+        text-align: right;
+        width: 40%;
+        padding-right: 5px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 18px;
+        color: #333;
+        
+        &:after {
+            content: ':';  
+        }
+    }
+    
+    .textbox {
+        width: 58%;
+        border: none;
+        outline: none;
+    }
+    
+    .submit {
+        button {
+            cursor: pointer;
+            padding: 5px 0;
+            width: 100%;
+            font-weight:bold;
+            color: #FFF;
+            display: block;
+            background: none;
+            border: none;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-shadow: 1px 2px 0px #888;
+            
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+}

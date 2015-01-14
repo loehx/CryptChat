@@ -1,0 +1,17 @@
+/* --- Default :: Global --- */
+
+.ftl {
+	float: left;
+}
+
+.ftr {
+	float: right;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0px;
+}

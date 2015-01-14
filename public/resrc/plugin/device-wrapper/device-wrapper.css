@@ -1,0 +1,21 @@
+
+@media only screen and (min-width: 481px) {
+
+    .iphone5-wapper {
+        background-image: url(iphone5.png);
+        width: 478px;
+        height: 897px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .iphone5-inner {
+        position: absolute;
+        left: 80px;
+        right: 77px;
+        top: 124px;
+        bottom: 205px;
+        overflow: auto;
+    }
+
+} 
